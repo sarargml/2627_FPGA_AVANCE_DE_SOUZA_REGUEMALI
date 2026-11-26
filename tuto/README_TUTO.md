@@ -2,10 +2,6 @@
 
 **Auteurs** — Sara REGUEMALI, Luis Henrique DE SOUZA
 
-**FPGA cible** — Intel Cyclone V (`5CSEBA6U23I7`)  
-
-**Outils** — Quartus 24.1, Platform Designer et Ashling RiscFree
-
 [Énoncé du TP FPGA avancé](https://github.com/lfiack/ENSEA_2A_FPGA_Public/blob/main/majeure/3-tp/fpga_adv_tp.md)
 
 ## Objectif
@@ -60,11 +56,10 @@ Le bloc généré est instancié dans `tp_nios_v.vhd`. Son horloge et son reset 
 
 La compilation Quartus produit le fichier de configuration utilisé pour programmer le FPGA. Cette étape met en place le processeur et ses périphériques sur la carte. L’application C est chargée ensuite.
 
-**<!-- Ajouter une capture du résultat de compilation ou de la programmation
-dans Quartus. Indiquer sous la capture le résultat réellement observé.
-![Programmation du FPGA dans Quartus](images/programmation-quartus.png)
--->**
+<img width="600" height="586" alt="image" src="https://github.com/user-attachments/assets/86ac2b18-ce88-4180-aac1-14e38b93315c" />
 
+**Figure 2 — Compilation du système Nios V dans Quartus. La compilation s’est terminée en 6 min 16 s. Les étapes de synthèse, de placement-routage, de génération des fichiers de programmation et d’analyse temporelle se sont exécutées avec succès.**
+  
 
 ## 4. Création et chargement de l’application C
 
