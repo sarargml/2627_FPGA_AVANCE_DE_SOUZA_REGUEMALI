@@ -29,9 +29,6 @@ L’entité VHDL `tp_nios_v` relie le système aux entrées et sorties physiques
 | `soft/` | Application C et configuration du BSP |
 | `images/` | Captures et photos utilisées dans ce compte rendu |
 
-**<!-- Capture facultative de l’arborescence du projet dans Quartus.
-![Arborescence du projet Quartus](images/projet-quartus.png)
--->**
 
 ## 2. Architecture du système dans Platform Designer
 
@@ -63,10 +60,11 @@ Le bloc généré est instancié dans `tp_nios_v.vhd`. Son horloge et son reset 
 
 La compilation Quartus produit le fichier de configuration utilisé pour programmer le FPGA. Cette étape met en place le processeur et ses périphériques sur la carte. L’application C est chargée ensuite.
 
-**<!-- Ajouter une capture du résultat de compilation ou de la programmation
-dans Quartus. Indiquer sous la capture le résultat réellement observé.
-![Programmation du FPGA dans Quartus](images/programmation-quartus.png)
--->**
+<img width="608" height="650" alt="image" src="https://github.com/user-attachments/assets/773aab7e-c065-48f8-9d30-f9fc07541764" />
+
+**Figure 1 — Le processeur Nios V/m accède à la mémoire interne et aux
+périphériques. La sortie `external_connection` du PIO est exportée pour
+être reliée aux dix LED dans le module VHDL de niveau supérieur.**
 
 ## 4. Création et chargement de l’application C
 
