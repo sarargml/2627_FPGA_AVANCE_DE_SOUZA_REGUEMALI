@@ -46,11 +46,11 @@ périphériques. Une adresse de base est attribuée à chaque périphérique afi
 
 La mémoire interne est choisie comme cible du vecteur de reset. Le processeur peut ainsi y récupérer sa première instruction au démarrage. La sortie du PIO est exportée pour être raccordée aux LED dans le VHDL.
 
-**<!-- Insérer une capture du système dans Platform Designer.
-Faire apparaître les quatre blocs, les connexions et, si elles sont lisibles,
-les adresses de base.
-![Système Nios V dans Platform Designer](images/platform-designer.png)
--->**
+<img width="608" height="650" alt="image" src="https://github.com/user-attachments/assets/773aab7e-c065-48f8-9d30-f9fc07541764" />
+
+**Figure 1 — Le processeur Nios V/m accède à la mémoire interne et aux
+périphériques. La sortie `external_connection` du PIO est exportée pour
+être reliée aux dix LED dans le module VHDL de niveau supérieur.**
 
 ## 3. Intégration du système dans le VHDL
 
@@ -60,11 +60,11 @@ Le bloc généré est instancié dans `tp_nios_v.vhd`. Son horloge et son reset 
 
 La compilation Quartus produit le fichier de configuration utilisé pour programmer le FPGA. Cette étape met en place le processeur et ses périphériques sur la carte. L’application C est chargée ensuite.
 
-<img width="608" height="650" alt="image" src="https://github.com/user-attachments/assets/773aab7e-c065-48f8-9d30-f9fc07541764" />
+**<!-- Ajouter une capture du résultat de compilation ou de la programmation
+dans Quartus. Indiquer sous la capture le résultat réellement observé.
+![Programmation du FPGA dans Quartus](images/programmation-quartus.png)
+-->**
 
-**Figure 1 — Le processeur Nios V/m accède à la mémoire interne et aux
-périphériques. La sortie `external_connection` du PIO est exportée pour
-être reliée aux dix LED dans le module VHDL de niveau supérieur.**
 
 ## 4. Création et chargement de l’application C
 
